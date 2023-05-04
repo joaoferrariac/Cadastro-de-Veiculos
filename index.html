@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro De Veiculos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro De Veiculos</span>
+      <button onclick="openModal()" id="new">Adicionar Veiculo</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Veiculo</th>
+            <th>Modelo</th>
+            <th>Combustivel</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-veiculo">Veiculo</label>
+          <input id="m-veiculo" type="text" required />
+  
+          <label for="m-modelo">Modelo</label>
+          <input id="m-modelo" type="text" required />
+  
+          <label for="m-combustivel">Combustivel</label>
+          <input id="m-combustivel" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
